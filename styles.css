@@ -1,0 +1,193 @@
+body {
+    color: #fff;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    animation: changeBg 10s ease infinite;
+    background-color: #828a8a; /* Default background color for initial load */
+    transition: background-color 2.5s;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@keyframes changeBg {
+    0% {
+        background-color: #828a8a;
+    }
+    20% {
+        background-color: #435770;
+    }
+    40% {
+        background-color: #c5d6e0;
+    }
+    60% {
+        background-color: #dadde6;
+    }
+    80% {
+        background-color: #8e6e72;
+    }
+    100% {
+        background-color: #828a8a;
+    }
+}
+
+.card {
+    width: 450px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.share-icon {
+    border: 1px solid #000000;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #171010;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.save-contact:hover {
+    border: 1.5px solid #000000;
+    
+}
+.share-icon img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.profile-section {
+    padding: 15px 0;
+
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    background-color: #ffffff;
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: #2b648d;
+}
+h2 {
+    margin: 10px 0 10px;
+    font-size: 18px;
+    color: #100909;
+}
+h3 {
+    margin: 20px 0 5px;
+    font-size: 18px;
+    color: #100909ad;
+}
+h4 {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    color: #000000ad;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.save-contact {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid #234e6c;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #171010;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.save-contact:hover {
+    background-color: #2b648d;
+    color: white;
+    border: 1.5px solid #2b648d;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-options img {
+    width: 50px; /* Adjusted size */
+    height: 50px; /* Adjusted size */
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.contact-options img:hover {
+    transform: scale(1.1);
+}
+
+.category-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.category {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.category h4 {
+    font-size: 16px;
+    color: #100f0f;
+}
+
+.category-text {
+    font-size: 14px;
+    color: #353535;
+    display: none;
+    margin-left: 10px;
+}

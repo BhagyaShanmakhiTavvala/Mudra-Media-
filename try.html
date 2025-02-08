@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            width: 100%;
+        }
+        .timeline-item.left .content {
+            order: 1;
+            margin-right: auto;
+        }
+        .timeline-item.right .content {
+            order: 3;
+            margin-left: auto;
+        }
+        .timeline-item.center {
+            justify-content: center;
+        }
+        .timeline-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .social-icon img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icon img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="timeline-item center">
+            <img src="Location.png" class="timeline-image" alt="Facebook Logo">
+        </div>      
+        <div class="timeline-item center">
+            <img src="M LOGO.png" class="timeline-image" alt="Twitter Logo">
+        </div>
+        <div class="timeline-item center">
+            <img src="social instagram.png" class="timeline-image" alt="Instagram Logo">
+        </div>
+        <div class="timeline-item center">
+            <img src="social whatsapp.png" class="timeline-image" alt="GitHub Logo">
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.social-icon img').forEach(icon => {
+            icon.addEventListener('mouseover', () => {
+                icon.style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.3)';
+            });
+            icon.addEventListener('mouseout', () => {
+                icon.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+
